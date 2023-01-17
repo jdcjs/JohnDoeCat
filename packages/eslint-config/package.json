@@ -1,0 +1,19 @@
+{
+  "name": "@jdc/eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "vue"
+  ],
+  "dependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-define-config": "^1.14.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0"
+  },
+  "license": "MIT"
+}

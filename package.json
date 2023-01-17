@@ -1,0 +1,34 @@
+{
+  "name": "JohnDoeCat",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "app/*",
+    "packages/*"
+  ],
+  "description": "基于Pnpm、turbo的Monorepo项目",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch"
+  },
+  "author": "JohnDoeCat",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@jdc/eslint-config": "workspace:*",
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "turbo": "^1.7.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  },
+  "license": "MIT"
+}
